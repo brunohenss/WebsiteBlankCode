@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/icon-blank.ico" type="">
+
+  <title> BlankCode | Suporte </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .support_form_section {
+      background: #ffffff;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .support_form_section .form-group {
+      margin-bottom: 20px;
+    }
+
+    .support_form_section .form-control {
+      border-radius: 8px;
+      border: 1px solid #ced4da;
+      padding: 12px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .support_form_section .form-control:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    }
+
+    .support_form_section button {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .support_form_section button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .support_form_section form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .support_form_section form .form-group:nth-child(5),
+    .support_form_section form .form-group:nth-child(6) {
+      grid-column: span 2;
+    }
+
+    .support_form_section button {
+      grid-column: span 2;
+    }
+  </style>
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a href="index.html">  
+          <img src="images/logo-sem-fundo-menu.png" style="filter: invert(1);" width="155" alt="Logo BlankCode">
+         
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">Suporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Formulário de Suporte -->
+  
+
+<section class="support_form_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>Entre em <span>Contato</span> para Suporte</h2>
+    </div>
+    <br>
+    <br>
+
+    <form action="processa_suporte.php" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Nome*:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="empresa">Empresa*:</label>
+        <input type="text" id="empresa" name="empresa" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail*:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefone*:</label>
+        <input type="tel" id="phone" name="phone" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="subject">Assunto*:</label>
+        <input type="text" id="subject" name="subject" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensagem (descreva detalhadamente)*:</label>
+        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="file">Anexar arquivo (opcional):</label>
+        <input type="file" id="file" name="file" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>
+
+
+<!-- FAQ Section -->
+<!-- FAQ Section -->
+<section class="faq_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>FAQ - Perguntas <span>Frequentes</span></h2>
+    </div>
+    <div class="accordion" id="faqAccordion">
+      
+      <!-- FAQ 1 -->
+      <div class="card">
+        <div class="card-header" id="faqHeadingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+              <i class="fa fa-question-circle"></i> Como posso obter suporte?
+            </button>
+          </h5>
+        </div>
+        <div id="faqCollapseOne" class="collapse" aria-labelledby="faqHeadingOne" data-parent="#faqAccordion">
+          <div class="card-body">
+            Você pode entrar em contato conosco através do formulário de suporte ou enviar um e-mail para <strong>suporte@blankcode.com</strong>.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="card">
+        <div class="card-header" id="faqHeadingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+              <i class="fa fa-question-circle"></i> Como posso enviar arquivos de erro?
+            </button>
+          </h5>
+        </div>
+        <div id="faqCollapseTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#faqAccordion">
+          <div class="card-body">
+            Você pode anexar arquivos de erro ou capturas de tela diretamente no formulário de suporte, na opção "Anexar arquivo".
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="card">
+        <div class="card-header" id="faqHeadingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+              <i class="fa fa-question-circle"></i> Quais são os horários de atendimento?
+            </button>
+          </h5>
+        </div>
+        <div id="faqCollapseThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#faqAccordion">
+          <div class="card-body">
+            Nosso horário de atendimento é de segunda a sexta-feira, das 9h às 18h. Estamos à disposição para qualquer dúvida ou assistência.
+          </div>
+        </div>
+      </div>
+
+            <!-- FAQ 4 -->
+            <div class="card">
+              <div class="card-header" id="faqHeadingThrrrd">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapseThrrrd" aria-expanded="false" aria-controls="faqCollapseThrrrd">
+                    <i class="fa fa-question-circle"></i> Quanto tempo de garantia tenho sobre a solução?
+                  </button>
+                </h5>
+              </div>
+              <div id="faqCollapseThrrrd" class="collapse" aria-labelledby="faqCollapseThrrrd" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Todos os sistemas distribuidos por nós, possui uma garantia de 3 meses sobre custo da BlankCode. Oferecemos também contratos de manutenção e monitoramento de dados conforme negociação em contrato.
+                </div>
+              </div>
+            </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- CSS para FAQ -->
+<style>
+  .faq_section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+
+  .faq_section .heading_container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .faq_section .heading_container h2 span {
+    color: #007bff;
+  }
+
+  .faq_section .accordion .card {
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq_section .accordion .card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .faq_section .accordion .card-header h5 {
+    margin-bottom: 0;
+  }
+
+  .faq_section .accordion .btn-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq_section .accordion .btn-link i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .faq_section .card-body {
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+    color: #333;
+  }
+
+  .faq_section .card-body p {
+    margin-bottom: 0;
+  }
+
+  .faq_section .accordion .collapse.show .card-header {
+    background-color: #0056b3;
+  }
+</style>
+
+
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> Site desenvolvido por <i>Blank Code Solutions Tecnológica LDTA</i> |
+        <a href="https://html.design/">Todos os direitos reservados</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+<!-- JavaScript files -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>
+
